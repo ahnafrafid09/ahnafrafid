@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  background: #afbd70;
+}
+
+.container {
+  position: relative;
+}
+
+/* Navbar CSS */
+
+
+.navbar {
+  width: 100%;
+  height: 65px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar-item ul {
+  display: flex;
+}
+
+.navbar-item ul li {
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+
+.navbar-item ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.navbar-item ul li a:hover {
+  font-weight: bold;
+  color: #444;
+  text-decoration: underline;
+}
+
+/* navbar end */
+
+/* Jumbotron CSS */
+
+.jumbotron {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(asset/bg1.png);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center; */
+  background-color: #f7ff00;
+  background-image: linear-gradient(90deg, #f7ff00 0%, #5c7030 100%);
+
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.konten-jumbotron {
+  text-align: center;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 5px black;
+}
+
+.konten-jumbotron h1 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* end jumbotron */
+
+/* tentang css*/
+
+#tentang {
+  height: 100vh;
+  width: 100%;
+}
+
+#tentang h1, h2, p, li{
+  color: rgba(255, 255, 255, 0.867);
+}
+
+.judul-tentang {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-tentang h1 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #444;
+}
+
+.container-profil {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.penjelasan {
+  background-color: rgba(164, 164, 164, 0.548);
+  box-shadow: 0 0 5px white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.penjelasan h1 {
+  text-align: center;
+  color: #444;
+}
+
+.penjelasan p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.tentang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.vm {
+  width: 30%;
+  background-color: rgba(164, 164, 164, 0.548);
+  box-shadow: 0 0 5px white;
+  border-radius: 10px;
+  height: 50vh;
+}
+
+.vm h2 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.vm p {
+  border: 2px solid yellow;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.vm ul {
+  width: 80%;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 70px;
+}
+
+.vm ul li {
+  list-style-type:upper;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* end tentang */
+
+/* anggota CSS */
+
+#anggota {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.judul-anggota {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-anggota h1 {
+  padding-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.row-anggota {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.row-anggota .col-anggota {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 1px 3px black;
+  border-radius: 10px;
+}
+
+.row-anggota img {
+  margin-top:20px;
+  width: 300px;
+  height: 300px;
+  transition: transform 1s ease;
+}
+
+.row-anggota h1 {
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.row-anggota h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.row-anggota img:hover {
+  transform: scale(1.08);
+}
+
+/* end anggota */
+
+/* responsive */
+
+/* responsive end */
